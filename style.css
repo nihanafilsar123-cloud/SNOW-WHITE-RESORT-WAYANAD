@@ -718,7 +718,8 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
 
-    height: 300px;
+    
+    aspect-ratio: 1/1;
 }
 
 .room-images img {
@@ -728,6 +729,10 @@ footer {
     object-fit: cover;
 
     display: block;
+}
+.room-images img:only-child {
+    grid-column: 1 / -1;
+    
 }
 
 
